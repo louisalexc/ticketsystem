@@ -8,6 +8,10 @@
     <title>Tickets system</title>
 </head>
 <body>
-  @yield('content')  
+  <div class="container mx-auto">
+    <div class="flex flex-col">
+      @yield('content')  
+    </div>
+  </div>
 </body>
 </html>
