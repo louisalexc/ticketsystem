@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Tickets;
+use App\Models\Ticket;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,7 +27,7 @@ Tous les tickets
 Route::get('/tickets', function () {
     return view('tickets', [
         'heading' => 'Tous les tickets',
-        'tickets' => Tickets::all()
+        'tickets' => Ticket::all()
     ]);
 });
 /*
@@ -35,6 +35,6 @@ Un seul ticket
 */
 Route::get('/ticket/{id}', function ($id) {
     return view('ticket', [
-        'ticket' => Tickets::find($id)
+        'ticket' => Ticket::find($id)
     ]);
 });
