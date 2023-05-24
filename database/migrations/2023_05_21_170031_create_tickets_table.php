@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('entreprise_codepostal');
             $table->longText('message');
             $table->string('categories');
+            $table->string('status');
             $table->timestamps();
         });
     }

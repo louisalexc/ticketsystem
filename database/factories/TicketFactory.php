@@ -29,6 +29,7 @@ class TicketFactory extends Factory
             'entreprise_codepostal' => fake()->postcode() ,
             'message' => fake()->paragraph() ,
             'categories' => 'bruit, odeur, nuisance',
+            'status' => 'ouvert',
         ];
     }
 }
