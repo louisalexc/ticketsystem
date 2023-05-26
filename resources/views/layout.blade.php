@@ -10,7 +10,7 @@
     <title>Tickets system</title>
 </head>
 <body>
-  <nav class="container mx-auto my-4">
+  <nav class="container mx-auto mt-4 mb-6">
     <div class="flex items-center justify-between">
       <div id="logo"><img src="https://fakeimg.pl/400x100?text=Logo" alt=""></div>
       <div class="flex flex-row space-x-6">
@@ -18,7 +18,7 @@
         <a href="#">Tickets</a>
         <a href="#">Help</a>
       </div>
-      <button class="px-4 py-3"></button>
+      <a href="#" class="btn btn-primary">Déconnexion</a>
     </div>
   </nav>
   <div class="container mx-auto">
@@ -26,6 +26,7 @@
       @yield('content')  
     </div>
   </div>
+
   @livewireScripts
 </body>
 </html>
