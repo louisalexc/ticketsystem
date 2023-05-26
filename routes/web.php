@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TicketController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Ticket;
 
@@ -24,17 +25,14 @@ Route::get('/', function () {
 /*
 Tous les tickets 
 */
-Route::get('/tickets', function () {
-    return view('tickets', [
-        'heading' => 'Tous les tickets',
-        'tickets' => Ticket::all()
-    ]);
-});
+Route::get('/', [TicketController::class, 'index']);
+
 /*
 Un seul ticket  
 */
-Route::get('/ticket/{id}', function ($id) {
-    return view('ticket', [
-        'ticket' => Ticket::find($id)
-    ]);
-});
+Route::get('/tickets/{ticket}', [TicketController::class,'show']);
+
+/*
+Créer un ticket
+*/
+
