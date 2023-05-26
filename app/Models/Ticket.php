@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\User;
+use App\Models\Category;
 use App\Models\Response;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -19,5 +20,8 @@ class Ticket extends Model
 
     public function response(): HasMany {
         return $this->hasMany(Response::class);
+    }
+    public function category(): HasMany {
+        return $this->hasMany(Category::class);
     }
 }
