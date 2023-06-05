@@ -12,7 +12,7 @@
 <body>
   <nav class="container mx-auto mt-4 mb-6">
     <div class="flex items-center justify-between">
-      <div id="logo"><img src="https://fakeimg.pl/400x100?text=Logo" alt=""></div>
+      <div id="logo"><img src="https://placehold.co/400x100?text=Logo" alt=""></div>
       <div class="flex flex-row space-x-6">
         <a href="#">Dashboard</a>
         <a href="#">Tickets</a>
